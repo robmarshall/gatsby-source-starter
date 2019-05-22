@@ -1,0 +1,36 @@
+{
+  "name": "gatsby-source-starter",
+  "description": "Gatsby JS source plugin starter. To jump start your plugin build.",
+  "version": "0.0.1",
+  "author": "Robert Marshall (https://robertmarshall.dev)",
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-gatsby-package": "^0.1.4"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-source",
+    "gatsby-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robmarshall/gatsby-source-starter.git"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "install-peers": "^1.0.3"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir ."
+  },
+  "peerDependencies": {
+    "gatsby": ">2.0.15"
+  }
+}
